@@ -16,9 +16,8 @@ class TransactionController extends Controller
     {
         $transaction = Transaction::with(['food', 'user'])->paginate(10);
 
-        // echo json_encode($transaction);
-        return view('transactions.index',[
-            'transactions' => $transaction
+        return view('transactions.index', [
+            'transaction' => $transaction
         ]);
     }
 
