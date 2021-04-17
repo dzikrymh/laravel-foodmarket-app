@@ -9,8 +9,9 @@
 6. Generate key "php artisan key:generate"
 7. Create empty database
 8. Update .env file and fill DB_HOST, DB_PORT, DB_DATABASE, DB_USERNAME, and DB_PASSWORD
-9. Migrate database "php artisan migrate"
-10. Seeder database "php artisan db:seed"
+9. Link penyimpanan public laravel "php artisan storage:link"
+10. Migrate database "php artisan migrate"
+11. Seeder database "php artisan db:seed"
 
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
