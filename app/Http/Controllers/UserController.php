@@ -44,6 +44,11 @@ class UserController extends Controller
 
         $data['profile_photo_path'] = $request->file('profile_photo_path')->store('assets/user', 'public');
         $data['password'] = Hash::make($data['password']);
+        if ($data['roles'] == 'ADMIN') {
+            $data['current_team_id'] = 1;
+        } else {
+            $data['current_team_id'] = null;
+        }
 
         User::create($data);
 
